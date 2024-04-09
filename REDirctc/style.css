@@ -89,7 +89,7 @@ nav ul li a {
 .blue-bg{
     background-color: lightblue;
     color: white;
-    height: 10000px;
+    height: 100%;
     width: 100%;
     background-image: url("/images/bg.png");
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -110,7 +110,7 @@ h3{
     width: 900px;
     position: absolute;
     border-radius: 50px;
-    margin-top: -800px;
+    margin-top: -300px;
     top: 10%;
     left: 10%;
     right: 10%;
@@ -288,43 +288,25 @@ input[type="submit"]:hover {
 }
 .circle{
     display: flex;
-    flex-direction: column;  
-}
-.circle-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* This makes it a circle */
-    overflow: hidden; /* Ensure the image stays within the circle */
-    position: relative;
-    margin: 10px; /* Adjust the margin between circles */
-    /* float: left; Arrange circles horizontally */
-    text-align: center;
-    background-color: #f0f0f0;
     justify-content: center;
-    align-items: center;
-    /* display: block; */
-    /* padding-left: 30px; */
-    margin-left: 20px;
-    place-items: center;
-    display: flex;
-  flex-direction: column;
-  gap: 20px; /* Adjust as needed */
-  align-items: center;
     
 }
- .circle-container img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover; /* Maintain aspect ratio and fill the circle */
-    overflow: hidden; /* Ensure the image stays within the circle */
-    top: 50%;
-    left: 50%;
-    justify-content: center;
-    align-items: center;
-    margin: 10px; 
-     margin-left: 50px; 
-     display: block; 
- }
+.container{
+    width: 100px;
+    padding: 20px;
+}
+.container img{
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    
+
+}
+.container p{
+    text-align: center;
+}
+
     /* .row{
     display: flex;
     flex-direction: column;
@@ -384,15 +366,15 @@ input[type="submit"]:hover {
  justify-content: space-between;
  color: red;
  font-weight: bolder;
- margin-top: 200px;
- height: 114px;
+ margin-top: 20px;
+ height: 60px;
  width: 100%;
  background-color: #f9f9f9;
 
 }
 .first-two-cards{
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
 }
 .cards {
@@ -418,18 +400,24 @@ input[type="submit"]:hover {
   .cards .card-content p {
     margin-bottom: 0;
   }
-.socialhandle-line{
-    height: 8px; /* Adjust thickness as needed */
-    width: 100%;
-    background-color: black; /* Adjust color as needed */
-    margin-top: 800px;
-    border: none;
-}
-.footer-columns {
+  .social-icons{
     display: flex;
-    justify-content: space-between;
+   justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
-  .footer-column {
-    flex: 1;
-    margin-right: 20px;
+  .social-icons img{
+    width: 20px;
+    padding: 10px;
+    float: right;
+  }
+  .footer-columns{
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-size: xx-large;
+    
+  }
+  .footer-columns ul{
+    list-style-type: none;
   }
